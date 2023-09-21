@@ -107,10 +107,10 @@ function PasswordGen() {
         </div>
 
         <div className="col-md-6">
-          <img src={image} alt="" className="img-fluid" />
+          <img src={image} alt="image" className="img-fluid" />
         </div>
-        <div className="col-md-6">
-          <div class="mb-3 row">
+        <div className="col-md-6 shadow">
+          <div class="mb-3 row pt-2">
             <label for="" class="col-md-3 col-form-label fw-bold">
               Password Length
             </label>
@@ -126,7 +126,7 @@ function PasswordGen() {
             </div>
           </div>
           <div className="row">
-            <label htmlFor="" className="col-3 col-form-label fw-bold">
+            <label htmlFor="" className="col-md-3 col-form-label fw-bold">
               Characters used
             </label>
 
@@ -201,11 +201,11 @@ function PasswordGen() {
               </div>
             </>
           </div>
-          <div className=" row mt-5">
+          <div className=" row mt-3">
             <div className="col">
               {prevPasswords && prevPasswords.length > 0 ? (
                 <div className="">
-                  <h4 className="">Last 5 Generated Passwords</h4>
+                  <h6 className="">Last 5 Generated Passwords</h6>
                   <ol>
                     {prevPasswords.map((prevPassword, index) => (
                       <li key={index} className="ps-3">
